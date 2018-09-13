@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivityA">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -16,35 +16,29 @@
         app:navigationIcon="@drawable/ic_close"
         app:title="Advanced search" />
 
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/input"
+    <EditText
+        android:id="@+id/input2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:hint="Artist"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbar">
-
-        <android.support.design.widget.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Artist" />
-
-    </android.support.design.widget.TextInputLayout>
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
 
     <com.google.android.flexbox.FlexboxLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
         app:alignContent="flex_start"
         app:flexWrap="wrap"
         app:layout_constraintBottom_toTopOf="@id/guide"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/input">
+        app:layout_constraintTop_toBottomOf="@id/input2">
 
         <TextView
             style="@style/Chip.Choice"

@@ -3,7 +3,7 @@ package shiro.am.i.uimockapp;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivityB extends AppCompatActivity{
 
     int layout;
 
@@ -20,10 +20,11 @@ public class MainActivity extends AppCompatActivity {
             setContentView(R.layout.layout_2b);
             layout = 2;
         } else if (layout == 2) {
-            setContentView(R.layout.layout_3);
+            setContentView(R.layout.layout_3b);
             layout = 3;
-        } else {
-            super.onBackPressed();
+        } else if (layout == 3) {
+            setContentView(R.layout.layout_1b);
+            layout = 1;
         }
     }
 }

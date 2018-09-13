@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivityA">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -30,7 +30,7 @@
         android:id="@+id/text2"
         style="@style/LargeItem"
         android:layout_marginTop="16dp"
-        android:text="Tag (18)"
+        android:text="Artist (14)"
         app:layout_constraintEnd_toStartOf="@id/text3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text1" />
@@ -40,7 +40,7 @@
         style="@style/LargeItem"
         android:layout_marginEnd="8dp"
         android:layout_marginTop="16dp"
-        android:text="Language (2)"
+        android:text="Tag (42)"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/text2"
         app:layout_constraintTop_toBottomOf="@id/text1" />
@@ -48,43 +48,55 @@
     <TextView
         android:id="@+id/text4"
         style="@style/LargeItem"
-        android:text="Any"
-        app:layout_constraintEnd_toEndOf="@id/text2"
+        android:text="Character (9)"
+        app:layout_constraintEnd_toStartOf="@id/text5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text2" />
-
-    <com.google.android.flexbox.FlexboxLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        android:paddingBottom="80dp"
-        android:paddingStart="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <TextView
-            style="@style/Chip.Input"
-            android:text="artist: runrun" />
-
-        <TextView
-            style="@style/Chip.Input"
-            android:text="tag: tiddies" />
-
-    </com.google.android.flexbox.FlexboxLayout>
+        app:layout_constraintTop_toBottomOf="@id/text3" />
 
     <TextView
-        android:id="@+id/fab"
+        android:id="@+id/text5"
+        style="@style/LargeItem"
+        android:layout_marginEnd="8dp"
+        android:text="Serie (6)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/text4"
+        app:layout_constraintTop_toBottomOf="@id/text3" />
+
+    <TextView
+        android:id="@+id/text6"
+        style="@style/LargeItem"
+        android:text="Language (2)"
+        app:layout_constraintEnd_toStartOf="@id/text7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text5" />
+
+    <TextView
+        android:id="@+id/text7"
+        style="@style/LargeItem"
+        android:layout_marginEnd="8dp"
+        android:text="Any"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/text6"
+        app:layout_constraintTop_toBottomOf="@id/text5" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/text_instructions" />
+
+    <TextView
+        android:id="@+id/text_instructions"
         android:layout_width="wrap_content"
-        android:layout_height="48dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginBottom="16dp"
-        android:background="@drawable/bg_fab_extended"
-        android:drawablePadding="12dp"
-        android:drawableStart="@drawable/ic_search"
-        android:gravity="center"
-        android:paddingEnd="20dp"
-        android:paddingStart="12dp"
-        android:text="8 Results Found"
+        android:paddingTop="8dp"
+        android:text="Select a filter above"
+        android:textColor="@color/textColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
