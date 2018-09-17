@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityA">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:navigationIcon="@drawable/ic_close"
+        app:title="Advanced search" />
+
+    <TextView
+        android:id="@+id/chips"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="Select a filter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <TextView
+        android:id="@+id/text2"
+        style="@style/LargeItem"
+        android:layout_marginTop="16dp"
+        android:text="Artist (14)"
+        app:layout_constraintEnd_toStartOf="@id/text3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chips" />
+
+    <TextView
+        android:id="@+id/text3"
+        style="@style/LargeItem"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Tag (42)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/text2"
+        app:layout_constraintTop_toBottomOf="@id/chips" />
+
+    <TextView
+        android:id="@+id/text4"
+        style="@style/LargeItem"
+        android:text="Character (9)"
+        app:layout_constraintEnd_toStartOf="@id/text5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text3" />
+
+    <TextView
+        android:id="@+id/text5"
+        style="@style/LargeItem"
+        android:layout_marginEnd="8dp"
+        android:text="Serie (6)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/text4"
+        app:layout_constraintTop_toBottomOf="@id/text3" />
+
+    <TextView
+        android:id="@+id/text6"
+        style="@style/LargeItem"
+        android:text="Language (2)"
+        app:layout_constraintEnd_toStartOf="@id/text7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text5" />
+
+    <TextView
+        android:id="@+id/text7"
+        style="@style/LargeItem"
+        android:layout_marginEnd="8dp"
+        android:text="Any"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/text6"
+        app:layout_constraintTop_toBottomOf="@id/text5" />
+
+</android.support.constraint.ConstraintLayout>

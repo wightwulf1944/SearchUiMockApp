@@ -23,7 +23,17 @@
         <activity
             android:name=".MainActivityB"
             android:label="Mock B"
-            android:taskAffinity=".MainActivityA">
+            android:taskAffinity=".MainActivityB">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivityC"
+            android:label="Mock C"
+            android:taskAffinity=".MainActivityC">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
