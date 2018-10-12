@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityA">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:navigationIcon="@drawable/ic_close"
+        app:title="Advanced search" />
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/chips"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimary"
+        android:paddingStart="8dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <TextView
+            style="@style/Chip.Input"
+            android:text="artist: runrun" />
+
+        <TextView
+            style="@style/Chip.Input"
+            android:text="tag: tiddies" />
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <TextView
+        android:id="@+id/text2"
+        style="@style/LargeItem"
+        android:layout_marginTop="16dp"
+        android:enabled="false"
+        android:text="Artist (0)"
+        app:layout_constraintEnd_toStartOf="@id/text3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chips" />
+
+    <TextView
+        android:id="@+id/text3"
+        style="@style/LargeItem"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="Tag (18)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/text2"
+        app:layout_constraintTop_toBottomOf="@id/chips" />
+
+    <TextView
+        android:id="@+id/text4"
+        style="@style/LargeItem"
+        android:enabled="false"
+        android:text="Character (0)"
+        app:layout_constraintEnd_toStartOf="@id/text5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text3" />
+
+    <TextView
+        android:id="@+id/text5"
+        style="@style/LargeItem"
+        android:layout_marginEnd="8dp"
+        android:enabled="false"
+        android:text="Serie (0)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/text4"
+        app:layout_constraintTop_toBottomOf="@id/text3" />
+
+    <TextView
+        android:id="@+id/text6"
+        style="@style/LargeItem"
+        android:text="Language (2)"
+        app:layout_constraintEnd_toStartOf="@id/text7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text5" />
+
+    <TextView
+        android:id="@+id/text7"
+        style="@style/LargeItem"
+        android:layout_marginEnd="8dp"
+        android:text="Any"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/text6"
+        app:layout_constraintTop_toBottomOf="@id/text5" />
+
+    <TextView
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_fab_extended"
+        android:drawableStart="@drawable/ic_search"
+        android:drawablePadding="12dp"
+        android:gravity="center"
+        android:paddingStart="12dp"
+        android:paddingEnd="20dp"
+        android:text="8 Results Found"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

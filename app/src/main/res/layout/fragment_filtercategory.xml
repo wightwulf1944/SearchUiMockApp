@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="16dp"
+    android:paddingTop="8dp"
+    android:paddingEnd="16dp">
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/chips_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:alignContent="flex_start"
+        app:flexWrap="wrap">
+
+        <TextView
+            style="@style/Chip.Choice"
+            android:text="runrun" />
+
+        <TextView
+            style="@style/Chip.Choice"
+            android:text="rusty soul" />
+
+        <TextView
+            style="@style/Chip.Choice"
+            android:text="ruuen rouga" />
+
+        <TextView
+            style="@style/Chip.Choice"
+            android:text="ryoh-zoh" />
+
+        <TextView
+            style="@style/Chip.Choice"
+            android:text="ryoma" />
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <EditText
+        android:id="@+id/input2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Artist" />
+
+</LinearLayout>

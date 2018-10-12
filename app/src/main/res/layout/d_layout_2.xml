@@ -39,8 +39,8 @@
     <TextView
         android:id="@+id/text3"
         style="@style/LargeItem"
-        android:layout_marginEnd="8dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
         android:text="Tag (42)"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/text2"
@@ -89,63 +89,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <View
-        android:id="@+id/bottom_sheet"
+    <FrameLayout
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:background="@color/windowBackground"
-        app:layout_constraintBottom_toTopOf="@id/guide"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/input2" />
-
-    <EditText
-        android:id="@+id/input2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:hint="Artist"
-        android:paddingTop="16dp"
-        app:layout_constraintBottom_toTopOf="@id/chips_group"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <com.google.android.flexbox.FlexboxLayout
-        android:id="@+id/chips_group"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        app:alignContent="flex_start"
-        app:flexWrap="wrap"
         app:layout_constraintBottom_toTopOf="@id/guide"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <TextView
-            style="@style/Chip.Choice"
-            android:text="runrun" />
+        <include layout="@layout/fragment_filtercategory" />
 
-        <TextView
-            style="@style/Chip.Choice"
-            android:text="rusty soul" />
-
-        <TextView
-            style="@style/Chip.Choice"
-            android:text="ruuen rouga" />
-
-        <TextView
-            style="@style/Chip.Choice"
-            android:text="ryoh-zoh" />
-
-        <TextView
-            style="@style/Chip.Choice"
-            android:text="ryoma" />
-
-    </com.google.android.flexbox.FlexboxLayout>
+    </FrameLayout>
 
     <android.support.constraint.Guideline
         android:id="@+id/guide"
