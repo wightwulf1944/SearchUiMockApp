@@ -38,8 +38,8 @@
     <TextView
         android:id="@+id/text3"
         style="@style/LargeItem"
-        android:layout_marginEnd="8dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
         android:text="Tag (42)"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/text2"
@@ -96,7 +96,6 @@
         android:layout_marginBottom="16dp"
         android:paddingTop="8dp"
         android:text="Select a filter above"
-        android:textColor="@color/textColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

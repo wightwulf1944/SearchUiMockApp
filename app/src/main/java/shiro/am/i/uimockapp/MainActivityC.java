@@ -17,7 +17,7 @@ public class MainActivityC extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         if (layout == 1) {
-            setContentView(R.layout.d_layout_2);
+            setContentView(R.layout.c_layout_2);
             layout = 2;
         } else if (layout == 2) {
             setContentView(R.layout.c_layout_3);

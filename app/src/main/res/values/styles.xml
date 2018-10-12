@@ -18,7 +18,6 @@
         <item name="android:paddingTop">8dp</item>
         <item name="android:layout_marginStart">8dp</item>
         <item name="android:layout_marginTop">8dp</item>
-        <item name="android:textColor">@color/textColor</item>
     </style>
 
     <style name="Chip">
@@ -28,7 +27,6 @@
         <item name="android:layout_marginEnd">8dp</item>
         <item name="android:paddingStart">12dp</item>
         <item name="android:gravity">center</item>
-        <item name="android:textColor">@color/textColor</item>
         <item name="android:background">@drawable/bg_chip</item>
     </style>
 
